@@ -1,0 +1,42 @@
+{
+  "name": "io.cordova.favoritelocation",
+  "displayName": "Favorite Location",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-plugin-camera": "^6.0.0",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-vibration": "^3.1.1"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-camera": {
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "cordova-plugin-device": {},
+      "cordova-plugin-vibration": {}
+    }
+  },
+  "dependencies": {
+    "onsenui": "^2.12.8"
+  }
+}
